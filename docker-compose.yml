@@ -1,0 +1,9 @@
+version: "3.8"
+services:
+  rust:
+    build: .
+    volumes:
+      - .:/usr/src/app
+    ports: 
+      - 8083:8083
+    tty: true
